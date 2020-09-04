@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#welcome {
+  height: calc(100vh - 56px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+nav {
+  width: 100%;
+  z-index: 99;
+}
+
+#navbarNav {
+  width: 100% !important;
+}
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heading {
+  display: flex;
+  width: 100;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.heading h2 {
+  border-bottom: 4px solid #1a1919;
+  padding: 0 10px;
+}
+
+.content-project .title-project {
+  font-size: 18px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background: #929292;
+  cursor: pointer;
+  color: rgb(39, 38, 38);
+  transition: 0.7s;
+}
+
+.content-project .title-project:hover {
+  /* border: none !important; */
+  text-decoration: none !important;
+  background: #2e2929;
+  color: #ffff;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+.content-project img {
+  width: 100%;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  margin-bottom: 20px;
+}
+.social-media {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.email,
+.phone {
+  font-size: 16px;
+}
+
+/* button {
+  outline: none;
+  border: unset;
+  width: 100%;
+} */
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background: #1a1919;
+  color: #ffff;
+  align-items: center;
+}
+
+#hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 738px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  .social-media {
+    width: 80%;
+  }
+  .width {
+    width: 50%;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media i {
+    margin-right: 10px;
+  }
+  .phone {
+    margin-left: 80px;
+  }
+  #hidden {
+    display: flex !important;
+  }
+.column{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 739px) and (max-width: 1023px) {
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  .nav-link {
+    padding: 8px !important;
+  }
+.column{
+  display: block;
+}
+}
